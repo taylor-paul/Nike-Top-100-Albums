@@ -10,7 +10,6 @@
 		89B2E91824BFC85900CBA363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E91724BFC85900CBA363 /* AppDelegate.swift */; };
 		89B2E91A24BFC85900CBA363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E91924BFC85900CBA363 /* SceneDelegate.swift */; };
 		89B2E91C24BFC85900CBA363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E91B24BFC85900CBA363 /* ViewController.swift */; };
-		89B2E91F24BFC85900CBA363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E91D24BFC85900CBA363 /* Main.storyboard */; };
 		89B2E92124BFC85C00CBA363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92024BFC85C00CBA363 /* Assets.xcassets */; };
 		89B2E92424BFC85C00CBA363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */; };
 		89B2E92F24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */; };
@@ -31,7 +30,6 @@
 		89B2E91724BFC85900CBA363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89B2E91924BFC85900CBA363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89B2E91B24BFC85900CBA363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		89B2E91E24BFC85900CBA363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89B2E92024BFC85C00CBA363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B2E92324BFC85C00CBA363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B2E92524BFC85C00CBA363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				89B2E91724BFC85900CBA363 /* AppDelegate.swift */,
 				89B2E91924BFC85900CBA363 /* SceneDelegate.swift */,
 				89B2E91B24BFC85900CBA363 /* ViewController.swift */,
-				89B2E91D24BFC85900CBA363 /* Main.storyboard */,
 				89B2E92024BFC85C00CBA363 /* Assets.xcassets */,
 				89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */,
 				89B2E92524BFC85C00CBA363 /* Info.plist */,
@@ -182,7 +179,6 @@
 			files = (
 				89B2E92424BFC85C00CBA363 /* LaunchScreen.storyboard in Resources */,
 				89B2E92124BFC85C00CBA363 /* Assets.xcassets in Resources */,
-				89B2E91F24BFC85900CBA363 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +221,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		89B2E91D24BFC85900CBA363 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89B2E91E24BFC85900CBA363 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCUK2EY27S;
 				INFOPLIST_FILE = "Nike Top 100 Albums/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCUK2EY27S;
 				INFOPLIST_FILE = "Nike Top 100 Albums/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
