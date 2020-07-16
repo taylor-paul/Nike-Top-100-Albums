@@ -18,7 +18,11 @@ class AlbumTableViewCell: UITableViewCell, Identifiable {
     var albumViewModel: AlbumViewModel? {
         didSet {
             textLabel?.text = albumViewModel?.name
-            detailTextLabel?.text = albumViewModel?.artistName
+            
+            let artistName = albumViewModel?.artistName ?? ""
+            detailTextLabel?.text = artistName
+            detailTextLabel?.accessibilityLabel = "by \(artistName)"
+
             if let imageURL = albumViewModel?.artworkUrl {
                 ImageCache.shared.downloadImage(url: imageURL) { result in
                     switch result {
@@ -39,6 +43,7 @@ class AlbumTableViewCell: UITableViewCell, Identifiable {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
         
         selectionStyle = .none
+        detailTextLabel?.accessibilityLabel = "by"
     }
     
     required init?(coder: NSCoder) {

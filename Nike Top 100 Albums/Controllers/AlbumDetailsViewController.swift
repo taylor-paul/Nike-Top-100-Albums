@@ -51,6 +51,7 @@ class AlbumDetailViewController: UIViewController {
         copyrightLabel.font = .preferredFont(forTextStyle: .footnote)
 
         let nameLabel = UILabel()
+        nameLabel.accessibilityTraits = .header
         nameLabel.numberOfLines = 0
         nameLabel.font = .preferredFont(forTextStyle: .headline)
 
@@ -70,6 +71,7 @@ class AlbumDetailViewController: UIViewController {
 
         // Setup the iTunes store button.
         let storeButton = UIButton()
+        storeButton.accessibilityHint = "Displays the album in iTunes"
         storeButton.translatesAutoresizingMaskIntoConstraints = false
         storeButton.addTarget(self, action: #selector(openItunes), for: .touchUpInside)
         storeButton.setTitle("iTunes Store", for: .normal)
@@ -106,11 +108,22 @@ class AlbumDetailViewController: UIViewController {
                 }
             }
         }
-        copyrightLabel.text = albumViewModel.copyright
+
         nameLabel.text = albumViewModel.name
+        nameLabel.accessibilityLabel = "Album name \(albumViewModel.name)"
+
         artistNameLabel.text = albumViewModel.artistName
+        artistNameLabel.accessibilityLabel = "By \(albumViewModel.artistName)"
+
         releaseDateLabel.text = albumViewModel.releaseDate
+        releaseDateLabel.accessibilityLabel = "Released \(albumViewModel.releaseDate)"
+        
         genreLabel.text = albumViewModel.genres
+        genreLabel.accessibilityLabel = "Genres \(albumViewModel.genres)"
+        
+        copyrightLabel.text = albumViewModel.copyright
+        copyrightLabel.accessibilityLabel = "Copyright \(albumViewModel.copyright)"
+        
     }
     
     // MARK: - Button Actions

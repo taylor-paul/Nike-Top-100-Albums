@@ -27,6 +27,7 @@ class AlbumsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Top 100 Albums"
         
+        tableView.accessibilityLabel = "Table of Top 100 Albums on iTunes"
         tableView.register(AlbumTableViewCell.self, forCellReuseIdentifier: AlbumTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
