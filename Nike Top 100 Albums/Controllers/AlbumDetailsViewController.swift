@@ -72,7 +72,7 @@ class AlbumDetailViewController: UIViewController {
         let storeButton = UIButton()
         storeButton.translatesAutoresizingMaskIntoConstraints = false
         storeButton.addTarget(self, action: #selector(openItunes), for: .touchUpInside)
-        storeButton.setTitle("Store", for: .normal)
+        storeButton.setTitle("iTunes Store", for: .normal)
         storeButton.backgroundColor = .systemBlue
         storeButton.layer.cornerRadius = 33
         storeButton.clipsToBounds = true
