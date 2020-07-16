@@ -36,7 +36,8 @@ class AlbumDetailViewController: UIViewController {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis  = NSLayoutConstraint.Axis.vertical
-        stackView.distribution  = UIStackView.Distribution.fillEqually
+        stackView.distribution  = UIStackView.Distribution.fill
+        stackView.spacing = 10
         stackView.alignment = UIStackView.Alignment.center
         view.addSubview(stackView)
         
@@ -46,11 +47,8 @@ class AlbumDetailViewController: UIViewController {
         view.addSubview(artworkImageView)
         
         let copyrightLabel = UILabel()
-        copyrightLabel.translatesAutoresizingMaskIntoConstraints = false
         copyrightLabel.numberOfLines = 0
         copyrightLabel.font = .preferredFont(forTextStyle: .footnote)
-        copyrightLabel.textAlignment = .center
-        view.addSubview(copyrightLabel)
 
         let nameLabel = UILabel()
         nameLabel.numberOfLines = 0
@@ -68,6 +66,7 @@ class AlbumDetailViewController: UIViewController {
         stackView.addArrangedSubview(artistNameLabel)
         stackView.addArrangedSubview(releaseDateLabel)
         stackView.addArrangedSubview(genreLabel)
+        stackView.addArrangedSubview(copyrightLabel)
 
         // Setup the iTunes store button.
         let storeButton = UIButton()
@@ -84,14 +83,10 @@ class AlbumDetailViewController: UIViewController {
         artworkImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         artworkImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         artworkImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        
-        copyrightLabel.topAnchor.constraint(equalTo: artworkImageView.bottomAnchor, constant: 15).isActive = true
-        copyrightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        copyrightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
 
+        stackView.topAnchor.constraint(equalTo: artworkImageView.bottomAnchor, constant: 20).isActive = true
         stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: storeButton.topAnchor, constant: -20).isActive = true
         
         storeButton.heightAnchor.constraint(equalToConstant: 66).isActive = true
         storeButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
