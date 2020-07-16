@@ -33,23 +33,28 @@ class AlbumDetailViewController: UIViewController {
         
         view.backgroundColor = .systemBackground
 
-        // Setup the stack view.
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis  = NSLayoutConstraint.Axis.vertical
-        stackView.distribution  = UIStackView.Distribution.fillProportionally
+        stackView.distribution  = UIStackView.Distribution.fillEqually
         stackView.alignment = UIStackView.Alignment.center
         view.addSubview(stackView)
         
-        // Initialize the subviews of the stack view.
         let artworkImageView = UIImageView()
-        artworkImageView.contentMode = .scaleAspectFill
+        artworkImageView.translatesAutoresizingMaskIntoConstraints = false
+        artworkImageView.contentMode = .scaleAspectFit
+        view.addSubview(artworkImageView)
         
         let copyrightLabel = UILabel()
+        copyrightLabel.translatesAutoresizingMaskIntoConstraints = false
         copyrightLabel.numberOfLines = 0
+        copyrightLabel.font = .preferredFont(forTextStyle: .footnote)
+        copyrightLabel.textAlignment = .center
+        view.addSubview(copyrightLabel)
 
         let nameLabel = UILabel()
         nameLabel.numberOfLines = 0
+        nameLabel.font = .preferredFont(forTextStyle: .headline)
 
         let artistNameLabel = UILabel()
         artistNameLabel.numberOfLines = 0
@@ -59,8 +64,6 @@ class AlbumDetailViewController: UIViewController {
         let genreLabel = UILabel()
         
         // Add the views to the stack.
-        stackView.addArrangedSubview(artworkImageView)
-        stackView.addArrangedSubview(copyrightLabel)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(artistNameLabel)
         stackView.addArrangedSubview(releaseDateLabel)
@@ -72,17 +75,25 @@ class AlbumDetailViewController: UIViewController {
         storeButton.addTarget(self, action: #selector(openItunes), for: .touchUpInside)
         storeButton.setTitle("Store", for: .normal)
         storeButton.backgroundColor = .systemBlue
-        storeButton.layer.cornerRadius = 25
+        storeButton.layer.cornerRadius = 33
         storeButton.clipsToBounds = true
         view.addSubview(storeButton)
         
         // Create the constraints for the views.
-        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        artworkImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        artworkImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        artworkImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        artworkImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        copyrightLabel.topAnchor.constraint(equalTo: artworkImageView.bottomAnchor, constant: 15).isActive = true
+        copyrightLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        copyrightLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+
         stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: storeButton.topAnchor, constant: -20).isActive = true
         
-        storeButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        storeButton.heightAnchor.constraint(equalToConstant: 66).isActive = true
         storeButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
         storeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         storeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
