@@ -11,21 +11,6 @@ import Foundation
 /// An api for fetching albums from the iTunes RSS feed.
 class AlbumApi {
     
-    /// Custom error type.
-    struct ApiError: Error {
-
-        private let message: String
-
-        /// The description of the error.
-        var localizedDescription: String {
-            return message
-        }
-        
-        init(message: String) {
-            self.message = message
-        }
-    }
-    
     /// Fetches the top 100 albums from iTunes.
     ///
     /// - Parameters:
@@ -51,7 +36,7 @@ class AlbumApi {
                     completion(.failure(error))
                 }
             } else {
-                completion(.failure(ApiError(message: "Missing data")))
+                completion(.failure(ErrorMessage("Missing data when fetching albums.")))
             }
     
         }.resume()

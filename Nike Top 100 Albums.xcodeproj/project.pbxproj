@@ -29,6 +29,8 @@
 		89B2E95C24BFF7CB00CBA363 /* album.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E95B24BFF7CB00CBA363 /* album.json */; };
 		89B2E95F24BFF7EE00CBA363 /* genre.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E95D24BFF7EE00CBA363 /* genre.json */; };
 		89B2E96024BFF7EE00CBA363 /* GenreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E95E24BFF7EE00CBA363 /* GenreTests.swift */; };
+		89F0CA2524C0F1FE007011F2 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F0CA2424C0F1FE007011F2 /* ErrorMessage.swift */; };
+		89F0CA2724C0F2D6007011F2 /* ErrorMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F0CA2624C0F2D6007011F2 /* ErrorMessageTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		89B2E95B24BFF7CB00CBA363 /* album.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = album.json; sourceTree = "<group>"; };
 		89B2E95D24BFF7EE00CBA363 /* genre.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genre.json; sourceTree = "<group>"; };
 		89B2E95E24BFF7EE00CBA363 /* GenreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreTests.swift; sourceTree = "<group>"; };
+		89F0CA2424C0F1FE007011F2 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		89F0CA2624C0F2D6007011F2 /* ErrorMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 				89B2E94D24BFECB200CBA363 /* Models */,
 				82DB017924C0169300F980F4 /* ViewModels */,
 				89B2E93024BFC85C00CBA363 /* Info.plist */,
+				89F0CA2624C0F2D6007011F2 /* ErrorMessageTests.swift */,
 			);
 			path = "Nike Top 100 AlbumsTests";
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				89B2E92024BFC85C00CBA363 /* Assets.xcassets */,
 				89B2E92524BFC85C00CBA363 /* Info.plist */,
 				82DB018524C0324A00F980F4 /* ImageCache.swift */,
+				89F0CA2424C0F1FE007011F2 /* ErrorMessage.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				82DB017E24C0317700F980F4 /* AlbumsViewController.swift in Sources */,
 				89B2E93E24BFD30400CBA363 /* AlbumApi.swift in Sources */,
 				89B2E94124BFD38600CBA363 /* Feed.swift in Sources */,
+				89F0CA2524C0F1FE007011F2 /* ErrorMessage.swift in Sources */,
 				82DB018424C031DB00F980F4 /* Identifiable.swift in Sources */,
 				89B2E94324BFD39400CBA363 /* Genre.swift in Sources */,
 				82DB017824C0166A00F980F4 /* AlbumViewModel.swift in Sources */,
@@ -370,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F0CA2724C0F2D6007011F2 /* ErrorMessageTests.swift in Sources */,
 				82DB017B24C016C000F980F4 /* AlbumViewModelTests.swift in Sources */,
 				89B2E96024BFF7EE00CBA363 /* GenreTests.swift in Sources */,
 				89B2E94F24BFECF200CBA363 /* FeedTests.swift in Sources */,

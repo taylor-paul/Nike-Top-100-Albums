@@ -40,7 +40,7 @@ class ImageCache {
                     completion(.success(image))
                 } else {
                     // TODO: Better error with a custom type
-//                    completion(.failure(error))
+                    completion(.failure(ErrorMessage("Missing data when loading image.")))
                 }
             })
             task.resume()
