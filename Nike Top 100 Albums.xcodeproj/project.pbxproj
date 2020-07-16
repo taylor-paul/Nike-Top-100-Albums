@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				89B2E93C24BFD2EE00CBA363 /* API */,
-				89B2E93F24BFD37500CBA363 /* Model */,
+				89B2E93F24BFD37500CBA363 /* Models */,
 				89B2E93B24BFD1FB00CBA363 /* Supporting Files */,
 			);
 			path = "Nike Top 100 Albums";
@@ -109,7 +109,7 @@
 		89B2E92D24BFC85C00CBA363 /* Nike Top 100 AlbumsTests */ = {
 			isa = PBXGroup;
 			children = (
-				89B2E94D24BFECB200CBA363 /* Model */,
+				89B2E94D24BFECB200CBA363 /* Models */,
 				89B2E94924BFD8F400CBA363 /* API */,
 				89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */,
 				89B2E93024BFC85C00CBA363 /* Info.plist */,
@@ -138,14 +138,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		89B2E93F24BFD37500CBA363 /* Model */ = {
+		89B2E93F24BFD37500CBA363 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				89B2E94024BFD38600CBA363 /* Feed.swift */,
 				89B2E94224BFD39400CBA363 /* Genre.swift */,
 				89B2E94424BFD3A100CBA363 /* Album.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		89B2E94924BFD8F400CBA363 /* API */ = {
@@ -156,14 +156,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		89B2E94D24BFECB200CBA363 /* Model */ = {
+		89B2E94D24BFECB200CBA363 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				89B2E95A24BFF79300CBA363 /* Genre */,
 				89B2E95524BFEF7700CBA363 /* Album */,
 				89B2E95424BFEF6C00CBA363 /* Feed */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		89B2E95424BFEF6C00CBA363 /* Feed */ = {
