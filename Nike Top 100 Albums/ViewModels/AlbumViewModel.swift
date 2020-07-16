@@ -17,6 +17,24 @@ struct AlbumViewModel {
         self.album = album
     }
     
+    /// The date formatter for formatting a date from iTunes.
+    private static let iTunesDateFormatter: DateFormatter = {
+        let iTunesDateFormatter = DateFormatter()
+        iTunesDateFormatter.dateFormat = "yyyy-MM-dd"
+        iTunesDateFormatter.calendar = Calendar(identifier: .iso8601)
+        iTunesDateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        return iTunesDateFormatter
+    }()
+    
+    /// The date formatter for formatting a date for presentation in a view.
+    private static let presentationFormatter: DateFormatter = {
+        let presentationFormatter = DateFormatter()
+        presentationFormatter.dateStyle = .medium
+        presentationFormatter.timeStyle = .none
+
+        return presentationFormatter
+    }()
+
 }
 
 extension AlbumViewModel {
@@ -47,26 +65,15 @@ extension AlbumViewModel {
         return album.copyright
     }
     
-    
     var releaseDate: String {
         // Convert the string from iTunes into a date.
-        let iTunesDateFormatter = DateFormatter()
-        iTunesDateFormatter.dateFormat = "yyyy-MM-dd"
-        iTunesDateFormatter.calendar = Calendar(identifier: .iso8601)
-        iTunesDateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
-        
-        guard let date = iTunesDateFormatter.date(from: album.releaseDate) else {
+        guard let date = AlbumViewModel.iTunesDateFormatter.date(from: album.releaseDate) else {
             // An album could be missing the day, causing the date formatting to fail.
             // Fallback to the original string.
             return album.releaseDate
         }
 
-        // The date format for presentation.
-        let presentationFormatter = DateFormatter()
-        presentationFormatter.dateStyle = .medium
-        presentationFormatter.timeStyle = .none
-
-        return presentationFormatter.string(from: date)
+        return AlbumViewModel.presentationFormatter.string(from: date)
     }
     
     /// The url of the album for navigation to iTunes.
