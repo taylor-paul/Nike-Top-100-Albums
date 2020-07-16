@@ -13,6 +13,7 @@
 		89B2E92124BFC85C00CBA363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92024BFC85C00CBA363 /* Assets.xcassets */; };
 		89B2E92424BFC85C00CBA363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */; };
 		89B2E92F24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */; };
+		89B2E93A24BFCC2D00CBA363 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E93924BFCC2D00CBA363 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		89B2E92A24BFC85C00CBA363 /* Nike Top 100 AlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nike Top 100 AlbumsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nike_Top_100_AlbumsTests.swift; sourceTree = "<group>"; };
 		89B2E93024BFC85C00CBA363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89B2E93924BFCC2D00CBA363 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		89B2E91624BFC85900CBA363 /* Nike Top 100 Albums */ = {
 			isa = PBXGroup;
 			children = (
+				89B2E93924BFCC2D00CBA363 /* Readme.md */,
 				89B2E91724BFC85900CBA363 /* AppDelegate.swift */,
 				89B2E91924BFC85900CBA363 /* SceneDelegate.swift */,
 				89B2E91B24BFC85900CBA363 /* ViewController.swift */,
@@ -179,6 +182,7 @@
 			files = (
 				89B2E92424BFC85C00CBA363 /* LaunchScreen.storyboard in Resources */,
 				89B2E92124BFC85C00CBA363 /* Assets.xcassets in Resources */,
+				89B2E93A24BFCC2D00CBA363 /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
