@@ -37,7 +37,7 @@
 		89B2E92A24BFC85C00CBA363 /* Nike Top 100 AlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nike Top 100 AlbumsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nike_Top_100_AlbumsTests.swift; sourceTree = "<group>"; };
 		89B2E93024BFC85C00CBA363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89B2E93924BFCC2D00CBA363 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = SOURCE_ROOT; };
+		89B2E93924BFCC2D00CBA363 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = "Nike Top 100 Albums/Supporting Files/Readme.md"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +79,8 @@
 		89B2E91624BFC85900CBA363 /* Nike Top 100 Albums */ = {
 			isa = PBXGroup;
 			children = (
-				89B2E93924BFCC2D00CBA363 /* Readme.md */,
-				89B2E91724BFC85900CBA363 /* AppDelegate.swift */,
-				89B2E91924BFC85900CBA363 /* SceneDelegate.swift */,
+				89B2E93B24BFD1FB00CBA363 /* Supporting Files */,
 				89B2E91B24BFC85900CBA363 /* ViewController.swift */,
-				89B2E92024BFC85C00CBA363 /* Assets.xcassets */,
-				89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */,
-				89B2E92524BFC85C00CBA363 /* Info.plist */,
 			);
 			path = "Nike Top 100 Albums";
 			sourceTree = "<group>";
@@ -97,6 +92,19 @@
 				89B2E93024BFC85C00CBA363 /* Info.plist */,
 			);
 			path = "Nike Top 100 AlbumsTests";
+			sourceTree = "<group>";
+		};
+		89B2E93B24BFD1FB00CBA363 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E93924BFCC2D00CBA363 /* Readme.md */,
+				89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */,
+				89B2E91724BFC85900CBA363 /* AppDelegate.swift */,
+				89B2E91924BFC85900CBA363 /* SceneDelegate.swift */,
+				89B2E92024BFC85C00CBA363 /* Assets.xcassets */,
+				89B2E92524BFC85C00CBA363 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCUK2EY27S;
-				INFOPLIST_FILE = "Nike Top 100 Albums/Info.plist";
+				INFOPLIST_FILE = "Nike Top 100 Albums/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,7 +383,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCUK2EY27S;
-				INFOPLIST_FILE = "Nike Top 100 Albums/Info.plist";
+				INFOPLIST_FILE = "Nike Top 100 Albums/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
