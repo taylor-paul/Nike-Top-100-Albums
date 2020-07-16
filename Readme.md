@@ -6,7 +6,7 @@
 
 ## Requirements
 
-- iOS 13.0+
+- iOS 11.0+
 - Xcode 11
 
 ## Author

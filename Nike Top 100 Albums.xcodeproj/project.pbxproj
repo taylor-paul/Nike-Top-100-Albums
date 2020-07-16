@@ -15,7 +15,6 @@
 		82DB018424C031DB00F980F4 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB018324C031DB00F980F4 /* Identifiable.swift */; };
 		82DB018624C0324A00F980F4 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB018524C0324A00F980F4 /* ImageCache.swift */; };
 		89B2E91824BFC85900CBA363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E91724BFC85900CBA363 /* AppDelegate.swift */; };
-		89B2E91A24BFC85900CBA363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E91924BFC85900CBA363 /* SceneDelegate.swift */; };
 		89B2E92124BFC85C00CBA363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92024BFC85C00CBA363 /* Assets.xcassets */; };
 		89B2E92424BFC85C00CBA363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */; };
 		89B2E93A24BFCC2D00CBA363 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E93924BFCC2D00CBA363 /* Readme.md */; };
@@ -52,7 +51,6 @@
 		82DB018524C0324A00F980F4 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		89B2E91424BFC85900CBA363 /* Nike Top 100 Albums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nike Top 100 Albums.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B2E91724BFC85900CBA363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89B2E91924BFC85900CBA363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		89B2E92024BFC85C00CBA363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B2E92324BFC85C00CBA363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89B2E92524BFC85C00CBA363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			children = (
 				89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */,
 				89B2E91724BFC85900CBA363 /* AppDelegate.swift */,
-				89B2E91924BFC85900CBA363 /* SceneDelegate.swift */,
 				89B2E92024BFC85C00CBA363 /* Assets.xcassets */,
 				89B2E92524BFC85C00CBA363 /* Info.plist */,
 				82DB018524C0324A00F980F4 /* ImageCache.swift */,
@@ -366,7 +363,6 @@
 				89B2E91824BFC85900CBA363 /* AppDelegate.swift in Sources */,
 				89B2E94524BFD3A100CBA363 /* Album.swift in Sources */,
 				8214741024C0433A0087CB12 /* AlbumDetailsViewController.swift in Sources */,
-				89B2E91A24BFC85900CBA363 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -508,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -525,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCUK2EY27S;
 				INFOPLIST_FILE = "Nike Top 100 Albums/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,7 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WCUK2EY27S;
 				INFOPLIST_FILE = "Nike Top 100 Albums/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -31,7 +31,13 @@ class AlbumDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemBackground
+        if #available(iOS 13.0, *) {
+            // Support dark mode on iOS 13.
+            view.backgroundColor = .systemBackground
+        } else {
+            // Fallback on earlier versions.
+            view.backgroundColor = .white
+        }
 
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
