@@ -58,7 +58,7 @@
 		89B2E92A24BFC85C00CBA363 /* Nike Top 100 AlbumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nike Top 100 AlbumsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nike_Top_100_AlbumsTests.swift; sourceTree = "<group>"; };
 		89B2E93024BFC85C00CBA363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89B2E93924BFCC2D00CBA363 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = "Nike Top 100 Albums/Supporting Files/Readme.md"; sourceTree = SOURCE_ROOT; };
+		89B2E93924BFCC2D00CBA363 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = SOURCE_ROOT; };
 		89B2E93D24BFD30400CBA363 /* AlbumApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumApi.swift; sourceTree = "<group>"; };
 		89B2E94024BFD38600CBA363 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		89B2E94224BFD39400CBA363 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
@@ -133,6 +133,7 @@
 		89B2E90B24BFC85900CBA363 = {
 			isa = PBXGroup;
 			children = (
+				89B2E93924BFCC2D00CBA363 /* Readme.md */,
 				89B2E91624BFC85900CBA363 /* Nike Top 100 Albums */,
 				89B2E92D24BFC85C00CBA363 /* Nike Top 100 AlbumsTests */,
 				89B2E91524BFC85900CBA363 /* Products */,
@@ -177,7 +178,6 @@
 		89B2E93B24BFD1FB00CBA363 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				89B2E93924BFCC2D00CBA363 /* Readme.md */,
 				89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */,
 				89B2E91724BFC85900CBA363 /* AppDelegate.swift */,
 				89B2E91924BFC85900CBA363 /* SceneDelegate.swift */,
