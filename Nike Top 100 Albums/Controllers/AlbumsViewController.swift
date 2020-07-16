@@ -88,7 +88,9 @@ extension AlbumsViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Navigate to detail view.
+        let album = albumViewModels[indexPath.row]
+        let detailsViewController = AlbumDetailViewController(with: album)
+        navigationController?.pushViewController(detailsViewController, animated: true)
     }
 
 }
