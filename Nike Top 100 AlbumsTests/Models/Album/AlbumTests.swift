@@ -21,7 +21,7 @@ class AlbumTests: XCTestCase {
         album = try JSONDecoder().decode(Album.self, from: data)
     }
 
-    func testAlbumParsing() throws {
+    func test_albumParsing_withCompleteAlbum_shouldParse() throws {
         guard let album = album else {
             XCTFail("Unexpectedly found nil value for albums")
             return
@@ -33,6 +33,9 @@ class AlbumTests: XCTestCase {
         XCTAssertEqual(album.artworkUrl,
                        "https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f0/84/a4/f084a4f6-a9ec-eeb5-ce14-73ba08f8b653/20UMGIM44782.rgb.jpg/200x200bb.png")
         XCTAssertEqual(album.genres.count, 3)
+        XCTAssertEqual(album.genres[0].name, "K-Pop")
+        XCTAssertEqual(album.genres[1].name, "Music")
+        XCTAssertEqual(album.genres[2].name, "Pop")
         XCTAssertEqual(album.url,
                        "https://music.apple.com/us/album/map-of-the-soul-7-the-journey/1517969553?app=itunes")
     }
