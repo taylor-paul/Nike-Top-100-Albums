@@ -85,8 +85,8 @@ class AlbumDetailViewController: UIViewController {
         artworkImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
 
         stackView.topAnchor.constraint(equalTo: artworkImageView.bottomAnchor, constant: 20).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
         
         storeButton.heightAnchor.constraint(equalToConstant: 66).isActive = true
         storeButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
