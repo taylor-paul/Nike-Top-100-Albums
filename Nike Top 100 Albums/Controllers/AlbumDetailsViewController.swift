@@ -72,6 +72,8 @@ class AlbumDetailViewController: UIViewController {
         storeButton.addTarget(self, action: #selector(openItunes), for: .touchUpInside)
         storeButton.setTitle("Store", for: .normal)
         storeButton.backgroundColor = .systemBlue
+        storeButton.layer.cornerRadius = 25
+        storeButton.clipsToBounds = true
         view.addSubview(storeButton)
         
         // Create the constraints for the views.
