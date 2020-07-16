@@ -17,9 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
+        // Initialize the navigation stack.
+        let navigationController = UINavigationController()
+        let albumsViewController = AlbumsViewController()
+        navigationController.viewControllers = [albumsViewController]
+        
+        // Initialize the window.
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 
