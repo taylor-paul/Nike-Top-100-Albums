@@ -21,7 +21,7 @@ class GenreTests: XCTestCase {
         genre = try JSONDecoder().decode(Genre.self, from: data)
     }
 
-    func testAlbumParsing() throws {
+    func test_genrParsing_withCompleteGenre_shouldParse() throws {
         guard let genre = genre else {
             XCTFail("Unexpectedly found nil value for albums")
             return
