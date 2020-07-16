@@ -14,6 +14,17 @@
 		89B2E92424BFC85C00CBA363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E92224BFC85C00CBA363 /* LaunchScreen.storyboard */; };
 		89B2E92F24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */; };
 		89B2E93A24BFCC2D00CBA363 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E93924BFCC2D00CBA363 /* Readme.md */; };
+		89B2E93E24BFD30400CBA363 /* AlbumApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E93D24BFD30400CBA363 /* AlbumApi.swift */; };
+		89B2E94124BFD38600CBA363 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E94024BFD38600CBA363 /* Feed.swift */; };
+		89B2E94324BFD39400CBA363 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E94224BFD39400CBA363 /* Genre.swift */; };
+		89B2E94524BFD3A100CBA363 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E94424BFD3A100CBA363 /* Album.swift */; };
+		89B2E94C24BFD94100CBA363 /* AlbumApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E94B24BFD94100CBA363 /* AlbumApiTests.swift */; };
+		89B2E94F24BFECF200CBA363 /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E94E24BFECF200CBA363 /* FeedTests.swift */; };
+		89B2E95324BFED7800CBA363 /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E95224BFED7800CBA363 /* feed.json */; };
+		89B2E95924BFF3A900CBA363 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E95824BFF3A900CBA363 /* AlbumTests.swift */; };
+		89B2E95C24BFF7CB00CBA363 /* album.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E95B24BFF7CB00CBA363 /* album.json */; };
+		89B2E95F24BFF7EE00CBA363 /* genre.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B2E95D24BFF7EE00CBA363 /* genre.json */; };
+		89B2E96024BFF7EE00CBA363 /* GenreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B2E95E24BFF7EE00CBA363 /* GenreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,17 @@
 		89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nike_Top_100_AlbumsTests.swift; sourceTree = "<group>"; };
 		89B2E93024BFC85C00CBA363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89B2E93924BFCC2D00CBA363 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = "Nike Top 100 Albums/Supporting Files/Readme.md"; sourceTree = SOURCE_ROOT; };
+		89B2E93D24BFD30400CBA363 /* AlbumApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumApi.swift; sourceTree = "<group>"; };
+		89B2E94024BFD38600CBA363 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		89B2E94224BFD39400CBA363 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		89B2E94424BFD3A100CBA363 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		89B2E94B24BFD94100CBA363 /* AlbumApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumApiTests.swift; sourceTree = "<group>"; };
+		89B2E94E24BFECF200CBA363 /* FeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTests.swift; sourceTree = "<group>"; };
+		89B2E95224BFED7800CBA363 /* feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
+		89B2E95824BFF3A900CBA363 /* AlbumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
+		89B2E95B24BFF7CB00CBA363 /* album.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = album.json; sourceTree = "<group>"; };
+		89B2E95D24BFF7EE00CBA363 /* genre.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = genre.json; sourceTree = "<group>"; };
+		89B2E95E24BFF7EE00CBA363 /* GenreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,8 @@
 		89B2E91624BFC85900CBA363 /* Nike Top 100 Albums */ = {
 			isa = PBXGroup;
 			children = (
+				89B2E93C24BFD2EE00CBA363 /* API */,
+				89B2E93F24BFD37500CBA363 /* Model */,
 				89B2E93B24BFD1FB00CBA363 /* Supporting Files */,
 				89B2E91B24BFC85900CBA363 /* ViewController.swift */,
 			);
@@ -88,6 +112,8 @@
 		89B2E92D24BFC85C00CBA363 /* Nike Top 100 AlbumsTests */ = {
 			isa = PBXGroup;
 			children = (
+				89B2E94D24BFECB200CBA363 /* Model */,
+				89B2E94924BFD8F400CBA363 /* API */,
 				89B2E92E24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift */,
 				89B2E93024BFC85C00CBA363 /* Info.plist */,
 			);
@@ -105,6 +131,69 @@
 				89B2E92524BFC85C00CBA363 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89B2E93C24BFD2EE00CBA363 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E93D24BFD30400CBA363 /* AlbumApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		89B2E93F24BFD37500CBA363 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E94024BFD38600CBA363 /* Feed.swift */,
+				89B2E94224BFD39400CBA363 /* Genre.swift */,
+				89B2E94424BFD3A100CBA363 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89B2E94924BFD8F400CBA363 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E94B24BFD94100CBA363 /* AlbumApiTests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		89B2E94D24BFECB200CBA363 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E95A24BFF79300CBA363 /* Genre */,
+				89B2E95524BFEF7700CBA363 /* Album */,
+				89B2E95424BFEF6C00CBA363 /* Feed */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89B2E95424BFEF6C00CBA363 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E95224BFED7800CBA363 /* feed.json */,
+				89B2E94E24BFECF200CBA363 /* FeedTests.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		89B2E95524BFEF7700CBA363 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E95B24BFF7CB00CBA363 /* album.json */,
+				89B2E95824BFF3A900CBA363 /* AlbumTests.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		89B2E95A24BFF79300CBA363 /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				89B2E95D24BFF7EE00CBA363 /* genre.json */,
+				89B2E95E24BFF7EE00CBA363 /* GenreTests.swift */,
+			);
+			path = Genre;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B2E95F24BFF7EE00CBA363 /* genre.json in Resources */,
+				89B2E95324BFED7800CBA363 /* feed.json in Resources */,
+				89B2E95C24BFF7CB00CBA363 /* album.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B2E93E24BFD30400CBA363 /* AlbumApi.swift in Sources */,
+				89B2E94124BFD38600CBA363 /* Feed.swift in Sources */,
 				89B2E91C24BFC85900CBA363 /* ViewController.swift in Sources */,
+				89B2E94324BFD39400CBA363 /* Genre.swift in Sources */,
 				89B2E91824BFC85900CBA363 /* AppDelegate.swift in Sources */,
+				89B2E94524BFD3A100CBA363 /* Album.swift in Sources */,
 				89B2E91A24BFC85900CBA363 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +314,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B2E96024BFF7EE00CBA363 /* GenreTests.swift in Sources */,
+				89B2E94F24BFECF200CBA363 /* FeedTests.swift in Sources */,
+				89B2E94C24BFD94100CBA363 /* AlbumApiTests.swift in Sources */,
 				89B2E92F24BFC85C00CBA363 /* Nike_Top_100_AlbumsTests.swift in Sources */,
+				89B2E95924BFF3A900CBA363 /* AlbumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

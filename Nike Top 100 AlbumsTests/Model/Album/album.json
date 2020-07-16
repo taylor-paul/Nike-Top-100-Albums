@@ -1,0 +1,28 @@
+{
+    "artistName": "BTS",
+    "id": "1517969553",
+    "releaseDate": "2020-07-15",
+    "name": "MAP OF THE SOUL : 7 ~ THE JOURNEY ~",
+    "kind": "album",
+    "copyright": "A Virgin Music release; ℗ 2020 UNIVERSAL MUSIC LLC",
+    "artistId": "883131348",
+    "artistUrl": "https://music.apple.com/us/artist/bts/883131348?app=itunes",
+    "artworkUrl100": "https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f0/84/a4/f084a4f6-a9ec-eeb5-ce14-73ba08f8b653/20UMGIM44782.rgb.jpg/200x200bb.png",
+    "genres": [{
+            "genreId": "51",
+            "name": "K-Pop",
+            "url": "https://itunes.apple.com/us/genre/id51"
+        },
+        {
+            "genreId": "34",
+            "name": "Music",
+            "url": "https://itunes.apple.com/us/genre/id34"
+        },
+        {
+            "genreId": "14",
+            "name": "Pop",
+            "url": "https://itunes.apple.com/us/genre/id14"
+        }
+    ],
+    "url": "https://music.apple.com/us/album/map-of-the-soul-7-the-journey/1517969553?app=itunes"
+}
