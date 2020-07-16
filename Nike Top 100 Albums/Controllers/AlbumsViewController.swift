@@ -32,7 +32,7 @@ class AlbumsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 130
         view.addSubview(tableView)
 
         tableView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
