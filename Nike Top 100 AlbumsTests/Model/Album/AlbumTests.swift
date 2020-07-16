@@ -27,7 +27,14 @@ class AlbumTests: XCTestCase {
             return
         }
 
+        XCTAssertEqual(album.artistName, "BTS")
+        XCTAssertEqual(album.releaseDate, "2020-07-15")
+        XCTAssertEqual(album.copyright, "A Virgin Music release; ℗ 2020 UNIVERSAL MUSIC LLC")
+        XCTAssertEqual(album.artworkUrl,
+                       "https://is2-ssl.mzstatic.com/image/thumb/Music113/v4/f0/84/a4/f084a4f6-a9ec-eeb5-ce14-73ba08f8b653/20UMGIM44782.rgb.jpg/200x200bb.png")
         XCTAssertEqual(album.genres.count, 3)
+        XCTAssertEqual(album.url,
+                       "https://music.apple.com/us/album/map-of-the-soul-7-the-journey/1517969553?app=itunes")
     }
 
 }
