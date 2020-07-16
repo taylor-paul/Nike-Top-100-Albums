@@ -21,13 +21,14 @@ class FeedTests: XCTestCase {
         feed = try JSONDecoder().decode(Feed.self, from: data)
     }
 
-    func testFeedParsing() throws {
+    func test_feedParsing_withCompleteFeed_shouldParse() throws {
         guard let feed = feed else {
             XCTFail("Unexpectedly found nil value for feed")
             return
         }
 
         XCTAssertEqual(feed.albums.count, 100)
+        XCTAssertEqual(feed.albums.first?.genres.count, 3)
     }
 
 }
