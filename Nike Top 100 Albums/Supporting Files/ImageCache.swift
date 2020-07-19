@@ -39,7 +39,6 @@ class ImageCache {
                     self.imageCache.setObject(image, forKey: url.absoluteString as NSString)
                     completion(.success(image))
                 } else {
-                    // TODO: Better error with a custom type
                     completion(.failure(ErrorMessage("Missing data when loading image.")))
                 }
             })
